@@ -12,7 +12,7 @@ game_is_finished = False
 lives = len(stages) - 1
 guessed = []
 
-choice = input("Make selection:\n 1. Marvel Characters\n 2. DC Characters\n 3. Bands in the 80's\n 4. Bands in the 90's\n 4. Generic List\n >>")
+choice = input("Make selection:\n 1. Marvel Characters\n 2. DC Characters\n 3. Bands in the 80's\n 4. Bands in the 90's\n 5. Generic List\n >>")
 if choice == "1":
   word_list = marvel.word_list
 elif choice == "2":
@@ -21,7 +21,7 @@ elif choice == "3":
   word_list = eighty.word_list
 elif choice == "4":
   word_list = nineties.word_list
-else:
+elif choice == "5":
   word_list = hangman_words.word_list
 
 
